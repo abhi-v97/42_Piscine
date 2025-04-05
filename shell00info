@@ -1,0 +1,15 @@
+## ex01
+
+to unzip tar, run tar -xvf [tar file]
+
+
+## ex09
+
+file  -C -m ft_magic - code to compile the magic file
+
+00000000 00000000 00000000 00000000 0000042 - 42 file type
+
+
+file  -m ft_magic * - test files for magic type
+
+
