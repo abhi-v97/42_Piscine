@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+void	ft_putchar(char c)
+{
+	printf("%c", c);
+}
+
+void	print_num(char *c, int n)
+{
+	int i = 0;
+	while (i < n)
+		printf("%i", c[i++]);
+	if (c[0] < (10 - n))
+	{
+		ft_putchar(',');
+		ft_putchar(' ');
+	}
+}
+
+void	ft_print_combn(int n)
+{
+	int i;
+	char output[10];
+	int digit;
+
+	i = 0;
+	while (i < n)
+		output[i++] = 0;
+	
+	i = 0;
+	while (output[0] <= (10 - n))
+	{
+		print_num(output, n);
+		output[n - 1]++;
+		i = n - 1;
+		if (output[i] > 9)
+		{
+			output[i - 1]++;
+			output[i];
+		}
+		i--;
+	}
+}
+	// printf("foo = %i", output[0]);
+
+
+int	main(void)
+{
+	ft_print_combn(2);
+}
+
