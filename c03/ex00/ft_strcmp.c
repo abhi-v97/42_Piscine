@@ -10,6 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+	@brief: ft_strcmp - reproduces the behaviour of strcmp
+	compares two strings, s1 and s2 by comparing each element as an unsigned
+	char
+
+	@return: returns the difference between the first unique pair. The value is
+	0 if s1 and s2 are equal, negative if s1 is less than s2, and positive if
+	s2 is greater than s2
+*/
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
@@ -19,6 +28,7 @@ int	ft_strcmp(char *s1, char *s2)
 		i++;
 	return (s1[i] - s2[i]);
 }
+
 /* 
 #include <stdio.h>
 int main()

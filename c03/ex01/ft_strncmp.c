@@ -10,6 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+	@brief: ft_strncmp - reproduces the behaviour of strncmp
+	compares two strings, s1 and s2 by comparing each element as an unsigned
+	char, up to the first n bytes
+
+	@return: returns the difference between the first unique pair. The value is
+	0 if s1 and s2 are equal, negative if s1 is less than s2, and positive if
+	s2 is greater than s2
+*/
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;
